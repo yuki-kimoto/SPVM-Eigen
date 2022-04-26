@@ -19,6 +19,7 @@
 #     PREREQ_PM => {  }
 #     TEST_REQUIRES => {  }
 #     VERSION_FROM => q[lib/SPVM/MyEigen.pm]
+#     clean => { FILES=>q[.spvm_build] }
 
 # --- MakeMaker post_initialize section:
 
@@ -765,7 +766,7 @@ clean :: clean_subdirs
 	  pm_to_blib.ts so_locations \
 	  tmon.out 
 	- $(RM_RF) \
-	  blib 
+	  .spvm_build blib 
 	  $(NOECHO) $(RM_F) $(MAKEFILE_OLD)
 	- $(MV) $(FIRST_MAKEFILE) $(MAKEFILE_OLD) $(DEV_NULL)
 

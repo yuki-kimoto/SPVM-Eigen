@@ -8,6 +8,7 @@ WriteMakefile(
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ABSTRACT_FROM     => 'lib/SPVM/MyEigen.pm', # retrieve abstract from module
     AUTHOR            => 'Yuki Kimoto <kimoto.yuki@gmail.com>',
+    clean => {FILES => ".spvm_build"},
 );
 sub MY::postamble {
   
