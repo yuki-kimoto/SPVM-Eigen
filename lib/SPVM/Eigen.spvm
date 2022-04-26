@@ -1,0 +1,3 @@
+class Eigen {
+  native static method add3d : double[] ($nums1 : double[], $nums2 : double[]);
+}
